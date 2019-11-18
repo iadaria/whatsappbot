@@ -1,0 +1,99 @@
+[2019-08-27 01:09:58] local.ERROR: There are no commands defined in the "cahe" namespace.
+
+Did you mean this?
+    cache {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"cahe\" namespace.
+
+Did you mean this?
+    cache at C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php:589)
+[stacktrace]
+#0 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php(638): Symfony\\Component\\Console\\Application->findNamespace('cahe')
+#1 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('cahe:clear')
+#2 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\OSPanel\\domains\\localhost\\whatsappbot\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 
+[2019-08-27 01:19:10] local.ERROR: file_get_contents(testUrl/sendFile?token=testToken): failed to open stream: No error {"exception":"[object] (ErrorException(code: 0): file_get_contents(testUrl/sendFile?token=testToken): failed to open stream: No error at C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\ApiRequest.php:71)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_get_conten...', 'C:\\\\OSPanel\\\\doma...', 71, Array)
+#1 C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\ApiRequest.php(71): file_get_contents('testUrl/sendFil...', false, Resource id #424)
+#2 C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\ApiRequest.php(41): App\\ApiRequest->sendRequest('sendFile', '{\"chatId\":\"7914...')
+#3 C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\Http\\Controllers\\WebhookController.php(110): App\\ApiRequest->sendFile('79143528288@c.u...', 'http://transitt...', 'WordDoc.docx', 'word')
+#4 [internal function]: App\\Http\\Controllers\\WebhookController->App\\Http\\Controllers\\{closure}(Object(stdClass), 0)
+#5 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(1120): array_map(Object(Closure), Array, Array)
+#6 C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\Http\\Controllers\\WebhookController.php(112): Illuminate\\Support\\Collection->map(Object(Closure))
+#7 C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\Http\\Controllers\\WebhookController.php(63): App\\Http\\Controllers\\WebhookController->sendMessagesToUser(Object(Illuminate\\Support\\Collection), '79143528288@c.u...')
+#8 C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\Http\\Controllers\\WebhookController.php(48): App\\Http\\Controllers\\WebhookController->execCommand(Object(stdClass))
+#9 [internal function]: App\\Http\\Controllers\\WebhookController->index(Object(Illuminate\\Http\\Request))
+#10 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#11 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('index', Array)
+#12 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\WebhookController), 'index')
+#13 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#14 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#15 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\OSPanel\\domains\\localhost\\whatsappbot\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#17 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): App\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#20 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#21 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#40 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#41 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#42 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#43 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#54 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#55 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#57 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#60 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#61 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#62 C:\\OSPanel\\domains\\localhost\\whatsappbot\\public_html\\index.php(58): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#63 {main}
+"} 
+[2019-08-27 09:17:43] local.ERROR: There are no commands defined in the "conifg" namespace.
+
+Did you mean this?
+    config {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"conifg\" namespace.
+
+Did you mean this?
+    config at C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php:589)
+[stacktrace]
+#0 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php(638): Symfony\\Component\\Console\\Application->findNamespace('conifg')
+#1 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php(237): Symfony\\Component\\Console\\Application->find('conifg:clear')
+#2 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\symfony\\console\\Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\OSPanel\\domains\\localhost\\whatsappbot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 C:\\OSPanel\\domains\\localhost\\whatsappbot\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 {main}
+"} 

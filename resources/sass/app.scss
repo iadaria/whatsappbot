@@ -1,0 +1,100 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.commands {
+    //border: 1px solid yellow;
+    margin-left: 350px;
+}
+
+/* .container {
+	width: 1024px;
+	padding: 2em;
+} */
+
+.bold-blue {
+	font-weight: bold;
+	color: #0277BD;
+}
+
+.fixed-table-loading {
+    display: none;
+}
+
+.glyphicon {
+    width: 10px;
+    height: 10px;
+}
+
+.glyphicon::before {
+    content: "Поиск";
+}
+
+.card-text-bot {
+    position: fixed;
+}
+
+@media (max-width: 1000px) 
+{
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead {
+        position: absolute;
+        opacity: 0;
+    }
+
+    tr {
+        margin: 1rem 0;
+    }
+
+    td {
+        border-bottom: 1px solid #eee;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    td:last-child {
+        border: 0;
+    }
+
+    td::before {
+        margin-right: auto;
+        font-weight: bold;
+    }
+
+    td:nth-of-type(1)::before {content: 'ID';}
+    td:nth-of-type(2)::before {content: 'chatId';}
+    td:nth-of-type(3)::before {content: 'Дата';}
+    td:nth-of-type(4)::before {content: 'Тип';}
+    td:nth-of-type(5)::before {content: 'Имя';}
+    td:nth-of-type(6)::before {content: 'Команда';}
+    td:nth-of-type(7)::before {content: 'Текст';}
+    td:nth-of-type(8)::before {content: 'Ответ';}
+    td:nth-of-type(9)::before {content: 'email';}
+}
+
+
+@media only screen and (max-width: 720px) {
+    .card-text-bot {
+      position: relative;
+    }
+  
+    .commands {
+      margin: 0;
+    }
+  }
+
